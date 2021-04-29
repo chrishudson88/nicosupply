@@ -132,20 +132,11 @@ label {
 }
 
 #about #description {
-    margin-top: 100px;
-}
-
-
-/* #wholesale #description {
     margin-top: 120px;
-} */
+}
 
 #home #description {
     margin-top: 120px;
-}
-
-#description>div {
-    margin-bottom: 150px;
 }
 
 .custom-toggler .navbar-toggler-icon {
