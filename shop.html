@@ -16,7 +16,18 @@
     <title>Nicosupply – Your Personal Nicotine Pouches Supplier</title>
 </head>
 
-<body id="home">
+<body id="shop">
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+        <div id="toast" class="toast align-items-center hide bg-dark" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Thank you for subscribing!
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
     <section id="first" class="min-vh-100">
         <div class="container pt-4">
             <nav class="navbar navbar-expand-xl navbar-dark bg-transparent">
@@ -50,17 +61,45 @@
                 </div>
             </nav>
         </div>
-        <div class="container d-flex justify-content-center">
+        <div class="container text-center">
             <div class="row mt-5">
-                <h1>Shop</h1>
+                <h3 id="coming-soon">Our webshop is coming soon!</h3>
+
+                <p class="mt-5">Subscribe to our Newsletters to become the first who tries the next generation of Premium nicotine pouches!</p>
+                <p>Latest products and sales. Directly to your inbox.</p>
+
+                <form id="my-form" class="text-center" action="https://formspree.io/f/mayaqeyb" method="POST">
+                    <div class="form-floating my-3 offset-sm-2 col-sm-8 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required>
+                        <label for="email">Email address</label>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button id="my-form-button" class="btn btn-primary rounded-pill">Subscribe</a>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="separator">
+        <div class="container h-100">
+            <div class="row h-100 d-flex justify-content-between align-items-center">
+                <div class="col-md-7">
+                    <p>Get in touch!</p>
+                    <a href="https://instagram.com/pool_pouches" target="_blank"><img class="me-4" src="img/instagram.svg" role="img" focusable="false"></a>
+                    <a href="https://instagram.com/pool_pouches" target="_blank"><img class="me-4" src="img/facebook.svg" role="img" focusable="false"></a>
+                    <a href="https://instagram.com/pool_pouches" target="_blank"><img class="me-4" src="img/twitter.svg" role="img" focusable="false"></a>
+                    <a href="https://instagram.com/pool_pouches" target="_blank"><img class="me-4" src="img/whatsapp.svg" role="img" focusable="false"></a>
+                    <a href="https://instagram.com/pool_pouches" target="_blank"><img src="img/telegram.svg" role="img" focusable="false"></a>
+                </div>
+                <div class="col-md-5 text-md-end">
+                    <p id="copyright" class="mb-0">© Copyright 2021 Nicosupply.eu | All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/submitForm.js"></script>
 </body>
 
 </html>

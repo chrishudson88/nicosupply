@@ -36,10 +36,12 @@ section.separator {
 
 #home section#second {
     background-image: url("../img/leaves.jpg");
+    padding-bottom: 150px;
 }
 
 #home section#third {
     background-image: url("../img/fruit.jpg");
+    padding-bottom: 150px;
 }
 
 #contact section#first {
@@ -53,6 +55,11 @@ section.separator {
 
 #wholesale section#first {
     background-image: url("../img/containers.jpg");
+    padding-bottom: 150px;
+}
+
+#shop section#first {
+    background-image: url("../img/boxing.jpg");
 }
 
 .navbar-brand {
@@ -106,9 +113,11 @@ label {
 }
 
 .form-floating>textarea.form-control {
-    /* min-height: calc(1.5em + .75rem + 2px);
-    height: unset; */
     height: 150px;
+}
+
+#home #description>div {
+    margin-bottom: 150px;
 }
 
 .social-media-links {
@@ -153,4 +162,8 @@ label {
 
 #copyright {
     font-size: 16px;
+}
+
+#coming-soon {
+    font-size: 32px;
 }

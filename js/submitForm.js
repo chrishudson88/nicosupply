@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
     function success() {
         form.reset();
-        button.style = "display: none ";
+        button.setAttribute("disabled", "disabled");
         const myAlert = document.getElementById('toast');
         const bsAlert = new bootstrap.Toast(myAlert);
         bsAlert.show();
