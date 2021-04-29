@@ -29,11 +29,20 @@ section {
     }
 }
 
-section.separator {
-    background-image: url("../img/separator.jpg");
+section.separator,
+section.footer {
     background-size: contain;
     background-repeat: repeat;
+}
+
+section.footer {
+    background-image: url("../img/footer.jpg");
     height: 180px;
+}
+
+section.separator {
+    background-image: url("../img/separator.jpg");
+    height: 60px;
 }
 
 #second,
