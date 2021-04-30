@@ -46,22 +46,29 @@ section.separator {
 }
 
 #second,
-#third {
-    padding-top: 150px;
+#third,
+#forth {
+    padding-top: 120px;
 }
 
 #home section#second {
     background-image: url("../img/leaves.jpg");
-    padding-bottom: 150px;
 }
 
 #home section#third {
     background-image: url("../img/fruit.jpg");
-    padding-bottom: 150px;
+}
+
+#home section#forth {
+    background-image: url("../img/boxing.jpg");
 }
 
 #contact section#first {
     background-image: url("../img/skyline.jpg");
+}
+
+#home section#first {
+    padding-bottom: 120px;
 }
 
 #about section#first {
@@ -172,8 +179,16 @@ label {
     border-color: white;
 }
 
-#brand {
-    margin-top: 120px;
+@media (max-width: 960px) {
+    #brand {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 961px) {
+    #brand {
+        margin-top: 120px;
+    }
 }
 
 #copyright {
