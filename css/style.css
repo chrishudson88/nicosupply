@@ -1,213 +1,225 @@
-html,
-body {
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
-body {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-section {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #464646;
-}
-
-@media (max-width: 600px) {
-    section#first {
-        background-image: url("../img/mobile_city.jpg");
+    html,
+    body {
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
     }
-    #home section#second {
-        background-image: url("../img/mobile_leaves.jpg");
+    
+    body {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    section {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #464646;
+    }
+    
+    @media (max-width: 600px) {
+        section#first {
+            background-image: url("../img/mobile_city.jpg");
+        }
+        #home section#second {
+            background-image: url("../img/mobile_leaves.jpg");
+            background-repeat: repeat;
+            background-size: unset;
+        }
+        p {
+            font-size: 16px;
+        }
+        h2 {
+            font-size: 21px;
+        }
+        h3 {
+            font-size: 21px;
+        }
+        #coming-soon {
+            font-size: 26px;
+        }
+    }
+    
+    @media (min-width: 601px) {
+        section#first {
+            background-image: url("../img/city.jpg");
+        }
+        #home section#second {
+            background-image: url("../img/leaves.jpg");
+        }
+        p {
+            font-size: 21px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        #coming-soon {
+            font-size: 32px;
+        }
+    }
+    
+    section.separator,
+    section.footer {
+        background-size: contain;
         background-repeat: repeat;
-        background-size: unset;
     }
+    
+    section.footer {
+        background-image: url("../img/footer.jpg");
+        height: 180px;
+    }
+    
+    section.separator {
+        background-image: url("../img/separator.jpg");
+        height: 60px;
+    }
+    
+    #second,
+    #third {
+        padding-top: 120px;
+    }
+    
+    #home section#third {
+        background-image: url("../img/fruit.jpg");
+    }
+    
+    #home section#forth {
+        background-image: url("../img/boxing.jpg");
+    }
+    
+    #contact section#first {
+        background-image: url("../img/skyline.jpg");
+    }
+    
+    #home section#first {
+        padding-bottom: 120px;
+    }
+    
+    #about section#first {
+        background-image: url("../img/skyscrapers.jpg");
+        padding-bottom: 150px;
+    }
+    
+    #wholesale section#first {
+        background-image: url("../img/containers.jpg");
+        padding-bottom: 150px;
+    }
+    
+    #shop section#first {
+        background-image: url("../img/boxing.jpg");
+    }
+    
+    .navbar-brand {
+        line-height: 75%;
+    }
+    
+    .navbar-brand.navbar-primary {
+        font-variant: small-caps;
+        font-size: 48px;
+        font-weight: 600;
+    }
+    
+    .navbar-brand.navbar-sub {
+        font-size: 19px;
+        font-weight: 500;
+    }
+    
+    .btn,
+    .nav-item a {
+        padding: 16px 32px;
+        line-height: 0.9;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 19px;
+    }
+    
+    h1 {
+        font-size: 68px;
+        font-variant: small-caps;
+        font-weight: 600;
+    }
+    
+    h2 {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+    h3 {
+        font-weight: 600;
+    }
+    
     p {
-        font-size: 16px;
+        font-weight: 600;
     }
-}
-
-@media (min-width: 601px) {
-    section#first {
-        background-image: url("../img/city.jpg");
+    
+    label {
+        color: #212529;
     }
-    #home section#second {
-        background-image: url("../img/leaves.jpg");
+    
+    .form-floating>textarea.form-control {
+        height: 150px;
     }
-    p {
-        font-size: 21px;
+    
+    #home #description>div {
+        margin-bottom: 150px;
     }
-}
-
-section.separator,
-section.footer {
-    background-size: contain;
-    background-repeat: repeat;
-}
-
-section.footer {
-    background-image: url("../img/footer.jpg");
-    height: 180px;
-}
-
-section.separator {
-    background-image: url("../img/separator.jpg");
-    height: 60px;
-}
-
-#second,
-#third {
-    padding-top: 120px;
-}
-
-#home section#third {
-    background-image: url("../img/fruit.jpg");
-}
-
-#home section#forth {
-    background-image: url("../img/boxing.jpg");
-}
-
-#contact section#first {
-    background-image: url("../img/skyline.jpg");
-}
-
-#home section#first {
-    padding-bottom: 120px;
-}
-
-#about section#first {
-    background-image: url("../img/skyscrapers.jpg");
-    padding-bottom: 150px;
-}
-
-#wholesale section#first {
-    background-image: url("../img/containers.jpg");
-    padding-bottom: 150px;
-}
-
-#shop section#first {
-    background-image: url("../img/boxing.jpg");
-}
-
-.navbar-brand {
-    line-height: 75%;
-}
-
-.navbar-brand.navbar-primary {
-    font-variant: small-caps;
-    font-size: 48px;
-    font-weight: 600;
-}
-
-.navbar-brand.navbar-sub {
-    font-size: 19px;
-    font-weight: 500;
-}
-
-.btn,
-.nav-item a {
-    padding: 16px 32px;
-    line-height: 0.9;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 19px;
-}
-
-h1 {
-    font-size: 68px;
-    font-variant: small-caps;
-    font-weight: 600;
-}
-
-h2 {
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 25px;
-    font-weight: 600;
-}
-
-p {
-    font-weight: 600;
-}
-
-label {
-    color: #212529;
-}
-
-.form-floating>textarea.form-control {
-    height: 150px;
-}
-
-#home #description>div {
-    margin-bottom: 150px;
-}
-
-.social-media-links {
-    width: 360px;
-}
-
-.partner-info {
-    margin-top: 80px;
-}
-
-.emails a {
-    color: inherit;
-}
-
-.contact-other-ways {
-    margin-top: 100px;
-}
-
-.btn svg {
-    vertical-align: -2px
-}
-
-#about #description {
-    margin-top: 120px;
-}
-
-#home #description {
-    margin-top: 120px;
-}
-
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.custom-toggler.navbar-toggler {
-    border-color: white;
-}
-
-@media (max-width: 960px) {
-    #brand {
-        margin-top: 40px;
+    
+    .social-media-links {
+        width: 360px;
     }
-}
-
-@media (min-width: 961px) {
-    #brand {
+    
+    .partner-info {
+        margin-top: 80px;
+    }
+    
+    .emails a {
+        color: inherit;
+    }
+    
+    .contact-other-ways {
+        margin-top: 100px;
+    }
+    
+    .btn svg {
+        vertical-align: -2px
+    }
+    
+    #about #description {
         margin-top: 120px;
     }
-}
-
-#copyright {
-    font-size: 16px;
-}
-
-#coming-soon {
-    font-size: 32px;
-}
-
-.row>.col>label {
-    padding-left: calc((var(--bs-gutter-x)/ 2) + 12px);
-    padding-right: calc((var(--bs-gutter-x)/ 2) + 12px);
-}
+    
+    #home #description {
+        margin-top: 120px;
+    }
+    
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    
+    .custom-toggler.navbar-toggler {
+        border-color: white;
+    }
+    
+    @media (max-width: 960px) {
+        #brand {
+            margin-top: 40px;
+        }
+    }
+    
+    @media (min-width: 961px) {
+        #brand {
+            margin-top: 120px;
+        }
+    }
+    
+    #copyright {
+        font-size: 16px;
+    }
+    
+    .row>.col>label {
+        padding-left: calc((var(--bs-gutter-x)/ 2) + 12px);
+        padding-right: calc((var(--bs-gutter-x)/ 2) + 12px);
+    }
