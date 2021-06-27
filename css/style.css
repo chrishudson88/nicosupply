@@ -67,6 +67,10 @@
         }
     }
     
+    .strength-level {
+        text-transform: unset;
+    }
+    
     section.separator,
     section.footer {
         background-size: contain;
