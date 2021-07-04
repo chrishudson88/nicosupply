@@ -151,7 +151,7 @@
         font-weight: 600;
     }
     
-    h1#brand {
+    #home #main-title {
         font-variant: small-caps;
     }
     
@@ -212,13 +212,13 @@
     }
     
     @media (max-width: 960px) {
-        #brand {
+        #main-title {
             margin-top: 40px;
         }
     }
     
     @media (min-width: 961px) {
-        #brand {
+        #main-title {
             margin-top: 120px;
         }
     }
