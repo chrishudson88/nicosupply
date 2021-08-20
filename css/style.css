@@ -50,7 +50,7 @@
         h3 {
             font-size: 21px;
         }
-        #coming-soon {
+        #big-text {
             font-size: 26px;
         }
     }
@@ -74,7 +74,7 @@
         h3 {
             font-size: 25px;
         }
-        #coming-soon {
+        #big-text {
             font-size: 32px;
         }
     }
@@ -256,4 +256,9 @@
     
     .mb-7 {
         margin-bottom: 100px;
+    }
+
+    .main-title-cbd.main-title-cbd {
+        line-height: 0.85;
+        font-weight: 700;
     }
