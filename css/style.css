@@ -14,7 +14,8 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-color: #464646;
+        /* background-color: #464646; */
+        background-color: #121212;
     }
 
     section#faq {
