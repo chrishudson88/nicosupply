@@ -60,6 +60,9 @@
         img.main-title {
             height: 30px;
         }
+        #available-soon-text {
+            font-size: 24px;
+        }
     }
     
     @media (min-width: 601px) {
@@ -89,6 +92,9 @@
         }
         img.main-title {
             height: 40px;
+        }
+        #available-soon-text {
+            font-size: 36px;
         }
     }
 
@@ -290,7 +296,6 @@
         text-transform: uppercase;
         letter-spacing: 10px;
         top: 300px;
-        font-size: 36px;
         font-weight: 600;
         left: -15px;
         transform: rotate(-40deg);
