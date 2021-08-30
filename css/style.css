@@ -57,6 +57,9 @@
         .btn {
             font-size: 17px;
         }
+        img.main-title {
+            height: 30px;
+        }
     }
     
     @media (min-width: 601px) {
@@ -83,6 +86,9 @@
         }
         .btn {
             font-size: 19px;
+        }
+        img.main-title {
+            height: 40px;
         }
     }
 
@@ -271,4 +277,15 @@
     .main-title-cbd.main-title-cbd {
         line-height: 0.85;
         font-weight: 700;
+    }
+
+    #rotated {
+        color: #00E982;
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        top: 300px;
+        left: -30px;
+        transform: rotate(-40deg);
+        background-color:#121212;
     }
