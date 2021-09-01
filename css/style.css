@@ -32,10 +32,10 @@
     
     @media (max-width: 600px) {
         section#first {
-            background-image: url("../img/city_mobile.jpg");
+            background-image: url("../img/mobile-city.jpg");
         }
         #home section#second {
-            background-image: url("../img/mobile_leaves.jpg");
+            background-image: url("../img/mobile-leaves.jpg");
             background-repeat: repeat;
             background-size: unset;
         }
