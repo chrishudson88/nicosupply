@@ -63,6 +63,15 @@
         #available-soon-text {
             font-size: 24px;
         }
+        #banner-img-customer-service, #banner-img-fruity {
+            height: 65px;
+        }
+        #banner-img-shipping {
+            height: 52px;
+        }
+        #banner-img-credit-card {
+            height: 45px;
+        }
     }
     
     @media (min-width: 601px) {
@@ -95,6 +104,15 @@
         }
         #available-soon-text {
             font-size: 36px;
+        }
+        #banner-img-customer-service, #banner-img-fruity {
+            height: 100px;
+        }
+        #banner-img-shipping {
+            height: 80px;
+        }
+        #banner-img-credit-card {
+            height: 70px;
         }
     }
 
