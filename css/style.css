@@ -45,8 +45,11 @@
         h1 {
             font-size: 36px;
         }
+        h1.banner-text {
+            font-size: 30px;
+        }
         h2 {
-            font-size: 21px;
+            font-size: 24px;
         }
         h3 {
             font-size: 21px;
@@ -87,8 +90,11 @@
         h1 {
             font-size: 48px;
         }
+        h1.banner-text {
+            font-size: 42px;
+        }
         h2 {
-            font-size: 25px;
+            font-size: 28px;
         }
         h3 {
             font-size: 25px;
@@ -319,4 +325,8 @@
         transform: rotate(-40deg);
         background-color:#121212eb;
         padding-left: 12px;
+    }
+
+    #benefits-of-cbd img {
+        height: 100px;
     }
