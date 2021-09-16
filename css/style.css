@@ -57,6 +57,13 @@
         h3 {
             font-size: 21px;
         }
+        .navbar-brand.navbar-primary {
+            font-size: 38px;
+        }
+        
+        .navbar-brand.navbar-sub {
+            font-size: 16px;
+        }
         #big-text {
             font-size: 26px;
         }
@@ -104,6 +111,13 @@
         }
         h3 {
             font-size: 25px;
+        }
+        .navbar-brand.navbar-primary {
+            font-size: 48px;
+        }
+        
+        .navbar-brand.navbar-sub {
+            font-size: 19px;
         }
         #big-text {
             font-size: 32px;
@@ -203,12 +217,10 @@
     
     .navbar-brand.navbar-primary {
         font-variant: small-caps;
-        font-size: 48px;
         font-weight: 600;
     }
     
     .navbar-brand.navbar-sub {
-        font-size: 19px;
         font-weight: 500;
     }
     

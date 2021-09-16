@@ -62,17 +62,17 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="/wholesale.html">Wholesale</a>
                             </li>
-                            <li class="nav-item dropdown">
-                            <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                EN
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">EN</a></li>
-                                <li><a class="dropdown-item" href="#">SK</a></li>
-                                <li><a class="dropdown-item" href="#">PL</a></li>
-                                <li><a class="dropdown-item" href="#">CZ</a></li>
-                                <li><a class="dropdown-item" href="#">DE</a></li>
-                            </ul> -->
+                            <li class="nav-item dropdown mx-3">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">EN</a></li>
+                                    <li><a class="dropdown-item" href="#">SK</a></li>
+                                    <li><a class="dropdown-item" href="#">PL</a></li>
+                                    <li><a class="dropdown-item" href="#">CZ</a></li>
+                                    <li><a class="dropdown-item" href="#">DE</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item mx-3 mt-2 mt-xl-0">
                                 <a class="btn btn-success rounded-pill" href="https://shop.nicosupply.eu">Shop now</a>
@@ -92,9 +92,7 @@
 
                     <h3 class="mt-4 mb-3 mt-lg-5 mb-lg-4">Get your CBD delivered to you doorstep!</h3>
                     <div class="mt-auto">
-                        <a class="btn btn-success rounded-pill me-1 mb-2 gtag-button"
-                            href="https://shop.nicosupply.eu/products/cbd" data-event="shop-cbd"
-                            data-event-category="product">
+                        <a class="btn btn-success rounded-pill me-1 mb-2 gtag-button" href="https://shop.nicosupply.eu/products/cbd" data-event="shop-cbd" data-event-category="product" id="example" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Tooltip on bottom">
                             Shop now
                         </a>
                         <a class="btn btn-secondary rounded-pill mb-2 gtag-button" href="/contact.html"
@@ -313,6 +311,10 @@
         gtag("event", "view_home_page", { 'event_category': "exploration", 'event_label': "landing_area", 'non_interaction': true });
     </script>
     <script src="js/googleAnalyticsButton.js"></script>
+    <script>
+        var exampleEl = document.getElementById('example')
+        var tooltip = new bootstrap.Tooltip(exampleEl)
+    </script>
 </body>
 
 </html>
