@@ -362,3 +362,15 @@
     #starter-kit s {
         font-weight: 700;
     }
+
+    .dropdown-item.active, .dropdown-item:active {
+        background-color: #2ecc71;
+    }
+
+    .dropdown-menu {
+        background-color: #121212;
+    }
+
+    .dropdown-item {
+        color: rgba(255,255,255,.55);
+    }

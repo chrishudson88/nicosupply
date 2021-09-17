@@ -67,11 +67,11 @@
                                     EN
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">EN</a></li>
-                                    <li><a class="dropdown-item" href="#">SK</a></li>
-                                    <li><a class="dropdown-item" href="#">PL</a></li>
-                                    <li><a class="dropdown-item" href="#">CZ</a></li>
-                                    <li><a class="dropdown-item" href="#">DE</a></li>
+                                    <li><a class="dropdown-item active" href="#">EN</a></li>
+                                    <li><a class="dropdown-item" href="https://shop.nicosupply.eu/sk/">SK</a></li>
+                                    <li><a class="dropdown-item" href="https://shop.nicosupply.eu/pl/">PL</a></li>
+                                    <li><a class="dropdown-item" href="https://shop.nicosupply.eu/cz/">CZ</a></li>
+                                    <li><a class="dropdown-item" href="https://shop.nicosupply.eu/de/">DE</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item mx-3 mt-2 mt-xl-0">
@@ -319,26 +319,7 @@
         var exampleEl = document.getElementById('example')
         var tooltip = new bootstrap.Tooltip(exampleEl)
     </script> -->
-    <script>
-        if (!document.referrer.includes("nicosupply.eu")) {
-            const availableLanguagesWithLinks = new Map([
-                // ["en", "https://nicosupply.eu/"],
-                ["en", "https://shop.nicosupply.eu/sk/"],
-                ["sk", "https://shop.nicosupply.eu/sk/"],
-                ["cz", "https://shop.nicosupply.eu/cz/"],
-                ["pl", "https://shop.nicosupply.eu/pl/"],
-                ["de", "https://shop.nicosupply.eu/de/"]
-            ]);
-            let userLanguages = navigator.languages;
-            const availableLanguages = [...availableLanguagesWithLinks.keys()];
-            let selectedLanguageWithCountry = userLanguages.find(userLanguage => availableLanguages.some(language => userLanguage.toLowerCase().includes(language.toLowerCase()))) || "en";
-            const selectedLanguage = availableLanguages.find(a => selectedLanguageWithCountry.includes(a));
-            // if (selectedLanguage !== "en") {
-                const redirectLink = availableLanguagesWithLinks.get(selectedLanguage);
-                window.location.replace(redirectLink);
-            // }
-        }
-    </script>
+    <script src="js/languageSelector.js"></script>
 </body>
 
 </html>
