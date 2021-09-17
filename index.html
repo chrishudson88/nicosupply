@@ -98,6 +98,7 @@
                         <a class="btn btn-secondary rounded-pill mb-2 gtag-button" href="/contact.html"
                             data-event="cbd-learn-more" data-event-category="exploration">Learn more</a>
                     </div>
+                    <p id="user-language"></p>
                 </div>
                 <div id="pouchy-title-section"
                     class="col-12 col-lg-6 mb-4 mt-lg-2 d-flex flex-column align-items-start">
@@ -311,9 +312,13 @@
         gtag("event", "view_home_page", { 'event_category': "exploration", 'event_label': "landing_area", 'non_interaction': true });
     </script>
     <script src="js/googleAnalyticsButton.js"></script>
-    <script>
+    <!-- <script>
         var exampleEl = document.getElementById('example')
         var tooltip = new bootstrap.Tooltip(exampleEl)
+    </script> -->
+    <script>
+        var userLang = navigator.language || navigator.userLanguage;
+        document.getElementById("user-language").innerHTML = userLang;
     </script>
 </body>
 
