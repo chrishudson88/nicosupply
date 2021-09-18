@@ -13,7 +13,7 @@ function myAjaxRequest(method, url, data, success, error, analyticParams) {
     xhr.send(data);
 }
 
-if (!document.referrer.includes("shop.nicosupply.eu")) {
+if (!document.referrer.includes("shop.nicosupply.eu") && (window.location.href.endsWith(".eu") || window.location.href.endsWith(".eu/"))) {
     const availableLanguagesWithCurrencies = new Map([
         ["en", { link: "https://shop.nicosupply.eu/", ccy: -1 }],
         ["pl", { link: "https://shop.nicosupply.eu/pl/", ccy: 0 }],
