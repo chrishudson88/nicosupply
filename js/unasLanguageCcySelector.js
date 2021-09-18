@@ -19,7 +19,7 @@ if (!document.referrer.includes("shop.nicosupply.eu")) {
         ["pl", { link: "https://shop.nicosupply.eu/pl/", ccy: 0 }],
         ["cz", { link: "https://shop.nicosupply.eu/cz/", ccy: 1 }],
         ["ro", { link: "https://shop.nicosupply.eu/", ccy: 2 }],
-        ["hu", { link: "https://shop.nicosupply.eu/sk/", ccy: 3 }],
+        ["hu", { link: "https://shop.nicosupply.eu/", ccy: 3 }],
         ["hr", { link: "https://shop.nicosupply.eu/", ccy: 4 }],
         ["sk", { link: "https://shop.nicosupply.eu/sk/", ccy: -1 }],
         ["de", { link: "https://shop.nicosupply.eu/de/", ccy: -1 }]
